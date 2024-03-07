@@ -1,0 +1,12 @@
+<p>
+  <label for="durationInput">Duration:</label>
+  <input id="durationInput" type="number" [value]="duration()" (change)="changeDuration($event)"
+    placeholder="Enter duration">
+</p>
+<p>
+  <label for="messageInput">Message:</label>
+  <input id="messageInput" type="text" [value]="message()" (change)="changeMessage($event)" placeholder="Enter message">
+</p>
+<p>
+  <app-counter [duration]="duration()" [message]="message()" />
+</p>
