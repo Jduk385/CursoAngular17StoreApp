@@ -8,5 +8,5 @@
   <input id="messageInput" type="text" [value]="message()" (change)="changeMessage($event)" placeholder="Enter message">
 </p>
 <p>
-  <app-counter [duration]="duration()" [message]="message()" />
+  <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() > 0"/>
 </p>

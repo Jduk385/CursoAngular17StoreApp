@@ -23,5 +23,37 @@ export class CounterComponent {
     console.log('ngOnChange called');
     console.log('-'.repeat(10));
     console.log(change);
+    const duration = change['duration'];
+    if (duration && duration.currentValue !== duration.previousValue) {
+      this.doSomething();
+    }
+  }
+
+  ngOnInit() {
+    // After render
+    //Async calls, subscriptions
+    console.log('ngOnInit called');
+    console.log('-'.repeat(10));
+    console.log('Duration:', this.duration);
+    console.log('Message:', this.message);
+  }
+
+  ngAfterViewInit() {
+    // After render
+    // hijos ya renderizados
+    console.log('ngAfterViewInit called');
+    console.log('-'.repeat(10));
+  }
+
+  ngOnDestroy() {
+
+    console.log('ngOnDestroy called');
+    console.log('-'.repeat(10));
+
+  }
+
+  doSomething() {
+    console.log('change duration');
+
   }
 }
