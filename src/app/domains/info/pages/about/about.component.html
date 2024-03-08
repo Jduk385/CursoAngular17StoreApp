@@ -1,12 +1,9 @@
-<p>
-  <label for="durationInput">Duration:</label>
-  <input id="durationInput" type="number" [value]="duration()" (change)="changeDuration($event)"
-    placeholder="Enter duration">
-</p>
-<p>
-  <label for="messageInput">Message:</label>
-  <input id="messageInput" type="text" [value]="message()" (change)="changeMessage($event)" placeholder="Enter message">
-</p>
-<p>
-  <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() > 0"/>
-</p>
+<div class="px-10">
+  <h1 class="text-lg font-bold">About</h1>
+  <p class="text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore nemo neque ducimus rerum reprehenderit exercitationem nesciunt! Provident, aliquam facilis repudiandae, dolorum sed recusandae debitis a voluptatum, nihil non saepe molestias.</p>
+  <p class="text-xs">Numero de clientes <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() > 0"/></p>
+    <div>
+      <app-wave-audio [audioUrl]="'assets/audio.mp3'"/>
+    </div>
+</div>
+
