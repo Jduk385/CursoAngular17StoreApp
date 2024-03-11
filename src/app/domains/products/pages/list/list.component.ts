@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
 
 import { ProductComponent } from './../../components/product/product.component';
+import { HeaderComponent } from '../../../shared/components/header/header.component';
 import { Product } from '../../../shared/models/product.model';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [ProductComponent],
+  imports: [ProductComponent, HeaderComponent],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })
