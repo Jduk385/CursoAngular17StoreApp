@@ -14,6 +14,7 @@ import { Product } from '../../../shared/models/product.model';
 export class ListComponent {
 
   products = signal<Product[]>([]);
+  cart = signal<Product[]>([]);
 
   constructor() {
     const initProducts: Product[] = [
@@ -49,8 +50,7 @@ export class ListComponent {
     this.products.set(initProducts);
   }
 
-  fromChild(event: string){
-    console.log('Estamos en el padre');
-    console.log(event);
+  addToCart(product: Product){
+    this.cart.update(prevState => [...prevState, product])
   }
 }
