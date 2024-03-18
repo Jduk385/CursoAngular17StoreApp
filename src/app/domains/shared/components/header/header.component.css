@@ -1,7 +1,5 @@
 <nav>
-  <div
-    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-  >
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <div class="flex items-center space-x-8">
       <a href="https://flowbite.com/" class="flex items-center ">
         <img
@@ -19,15 +17,13 @@
             href="#"
             class="block underline hover:underline"
             aria-current="page"
-            >Home</a
-          >
+            >Home</a>
         </li>
         <li>
           <a
             href="#"
             class="block hover:underline"
-            >About</a
-          >
+            >About</a>
         </li>
         <li>
           <a
