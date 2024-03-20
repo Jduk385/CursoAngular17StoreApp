@@ -1,13 +1,10 @@
-<div clas="container mx-auto">
-  <app-header />
-  <div>
-    <h1 class="text-lg font-bold">About</h1>
-    <p class="text-xs">Lorem ipsum dolor <span highlight>sit amet consectetur, adipisicing elit</span> . Tempore nemo neque ducimus rerum reprehenderit exercitationem nesciunt! Provident, aliquam facilis repudiandae, dolorum sed recusandae debitis a voluptatum, nihil non saepe molestias.</p>
-    <p class="text-xs">Numero de clientes <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() > 0"/></p>
-      <div>
-        <app-wave-audio [audioUrl]="'assets/audio.mp3'"/>
-      </div>
-  </div>
+<div>
+  <h1 class="text-lg font-bold">About</h1>
+  <p class="text-xs">Lorem ipsum dolor <span highlight>sit amet consectetur, adipisicing elit</span> . Tempore nemo neque ducimus rerum reprehenderit exercitationem nesciunt! Provident, aliquam facilis repudiandae, dolorum sed recusandae debitis a voluptatum, nihil non saepe molestias.</p>
+  <p class="text-xs">Numero de clientes <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() > 0"/></p>
+    <div>
+      <app-wave-audio [audioUrl]="'assets/audio.mp3'"/>
+    </div>
 </div>
 
 
