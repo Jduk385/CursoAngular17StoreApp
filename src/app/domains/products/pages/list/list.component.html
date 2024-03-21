@@ -1,12 +1,16 @@
 <div class="flex space-x-4 mt-5">
   <div class="w-80">
-    @for (category of categories(); track $index) {
     <ul>
       <li>
-        <a href="">{{ category.name }}</a>
+      <a routerLink="/">All</a>
+    </li>
+    @for (category of categories(); track $index) {
+
+      <li>
+        <a routerLink="/" [queryParams]="{categoryId: category.id}">{{ category.name }}</a>
       </li>
-    </ul>
     }
+  </ul>
 
   </div>
   <div class="grid grid-cols-4 gap-8">
