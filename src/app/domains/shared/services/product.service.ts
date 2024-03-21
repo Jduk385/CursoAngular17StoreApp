@@ -14,4 +14,7 @@ private http = inject(HttpClient);
 getProducts(){
   return this.http.get<Product[]>('https://api.escuelajs.co/api/v1/products');
 }
+getProduct(id: string){
+  return this.http.get<Product>(`https://api.escuelajs.co/api/v1/products/${id}`);
+}
 }
